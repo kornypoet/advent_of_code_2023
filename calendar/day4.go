@@ -52,7 +52,7 @@ func Day4(input *bufio.Scanner, part int) (result int) {
 			process[card.id] = 1
 		}
 		for _, card := range totalCards {
-			log.Infof("Processing card %d with %d wins %d times", card.id, card.wins, process[card.id])
+			log.Debugf("Processing card %d with %d wins %d times", card.id, card.wins, process[card.id])
 			for c := 0; c < process[card.id]; c++ {
 				for i := 0; i < card.wins; i++ {
 					process[card.id + i + 1]++

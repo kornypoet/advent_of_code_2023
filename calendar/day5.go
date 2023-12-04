@@ -5,10 +5,10 @@ import (
 )
 
 func init() {
-        registry["Day{{ .Day }}"] = Day{{ .Day }}
+        registry["Day5"] = Day5
 }
 
-func Day{{ .Day }}(input *bufio.Scanner, part int) (result int) {
+func Day5(input *bufio.Scanner, part int) (result int) {
         if part == 1 {
 
         } else {
